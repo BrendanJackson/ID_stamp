@@ -16,10 +16,14 @@
 // Definitions of the member functions should be saved in a file called ID_stamp.cpp
 // prompts user for itemAmount and bootstraps the program.
 ID_stamp::ID_stamp(){
+  // TODO UPDATE
+  // Sets up the random seed based on epoch calendar
+  srand(int(time(0)));
+
   cout << "\nHow many items will be ID stamped? \n";
   // TODO Data validation
   cin >> stampAmount;
-
+  // bootstraps the rest of the program
   forEachStampAmount(stampAmount);
 }
 
@@ -41,6 +45,7 @@ ID_stamp::ID_stamp(){
 
   // sets description of the stamp, reads keyboard input of a string (you may use getline( ) ).
   void ID_stamp::setDescription(){
+    // ignores linebreaks and everything that would enterfere with getline
     cin.ignore();
     getline(cin, desc);
   }
@@ -49,9 +54,12 @@ ID_stamp::ID_stamp(){
   // function of chrono. This is passed to the rand( ) function to generate an integer that will be
   // considered the unique identifier assigned to stamp.
   void ID_stamp::setStampID(){
-    static int i = 0;
-    stamp = i;
-    i++;
+
+    auto current_time = chrono::system_clock::now();
+    auto duration = current_time.time_since_epoch();
+    auto millis = std::chrono::duration_cast<std::chrono::milliseconds>(duration).count();
+    stamp = millis;
+
   }
 
   // Display data function that outputs both the entered string and the stamp to the screen with

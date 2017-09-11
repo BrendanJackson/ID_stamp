@@ -25,6 +25,8 @@
 #include <string>
 // contains definitions of time functions
 #include <chrono>
+//Gives us the epoch calendar used for the rand()
+#include <ctime>
 
 //standard namespace
 using namespace std;
