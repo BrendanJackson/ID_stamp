@@ -1,0 +1,72 @@
+Script started on Mon 11 Sep 2017 09:42:35 PM EDT
+]0;bjackson0093@district: ~/CS216bjackson0093@district:~/CS216$ ls
+[0m[01;32ma.out[0m  ID_stamp.cpp  ID_stamp_driver.cpp  ID_stamp_driver.o  ID_stamp.h  ID_stamp.o  typescript
+]0;bjackson0093@district: ~/CS216bjackson0093@district:~/CS216$ ./a[Ktype[K[K[K[K[K[Kg++ -std=c++11 -c *.cpp
+
+
+For CS or CIT assignments, consider using the CSTools 'c++' utility instead.
+
+
+]0;bjackson0093@district: ~/CS216bjackson0093@district:~/CS216$ g++ -std=c++11 *.o -o a.out
+
+
+For CS or CIT assignments, consider using the CSTools 'c++' utility instead.
+
+
+]0;bjackson0093@district: ~/CS216bjackson0093@district:~/CS216$ ./a.out 
+
+How many items will be ID stamped? 
+7
+
+Input a description for stamp #1
+l lo  bases
+
+The description is: bases
+
+The stamp ID is: 605176937
+
+Input a description for stamp #2
+waffles
+
+The description is: affles
+
+The stamp ID is: 21513368
+
+Input a description for stamp #3
+kittens
+
+The description is: ittens
+
+The stamp ID is: 1902318768
+
+Input a description for stamp #4
+mi t ittens
+
+The description is: ittens
+
+The stamp ID is: 1881192981
+
+Input a description for stamp #5
+littens
+
+The description is: ittens
+
+The stamp ID is: 254995523
+
+Input a description for stamp #6
+example
+
+The description is: xample
+
+The stamp ID is: 1527282286
+
+Input a description for stamp #7
+description #7
+
+The description is: escription #7
+
+The stamp ID is: 1192760111
+]0;bjackson0093@district: ~/CS216bjackson0093@district:~/CS216$ exit
+exit
+
+Script done on Mon 11 Sep 2017 09:45:04 PM EDT

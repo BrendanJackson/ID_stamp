@@ -25,8 +25,6 @@
 #include <string>
 // contains definitions of time functions
 #include <chrono>
-//Gives us the epoch calendar used for the rand()
-#include <ctime>
 
 //standard namespace
 using namespace std;
@@ -38,6 +36,7 @@ using namespace std;
 *******************************************************************************/
 class ID_stamp
 {
+  // class members that cannot be accessed directly
   private:
     // storage for items to be stamped
     int stampAmount;
@@ -45,6 +44,7 @@ class ID_stamp
     int stamp;
     // variable name desc of type string for product description
     string desc;
+  // class members that can be used freely within the class
   public:
     // prompts user for itemAmount and bootstraps the program.
     ID_stamp();

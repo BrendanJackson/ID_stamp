@@ -11,8 +11,8 @@
   CS216
 */
 
-
+// runs program
 int main(){
+  // instantiates the object firstStamp from the class ID_stamp
   ID_stamp firstStamp;
-  cout << "\n choo \n";
 }
