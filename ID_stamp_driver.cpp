@@ -15,4 +15,6 @@
 int main(){
   // instantiates the object firstStamp from the class ID_stamp
   ID_stamp firstStamp;
+
+  cout << "having fun with git!";
 }
